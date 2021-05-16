@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1C0049252638A6600000A9C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0049242638A6600000A9C6 /* AppDelegate.swift */; };
 		1C0049272638A6600000A9C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0049262638A6600000A9C6 /* SceneDelegate.swift */; };
-		1C0049292638A6600000A9C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0049282638A6600000A9C6 /* ViewController.swift */; };
+		1C0049292638A6600000A9C6 /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0049282638A6600000A9C6 /* CalculatorVC.swift */; };
 		1C00492C2638A6600000A9C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C00492A2638A6600000A9C6 /* Main.storyboard */; };
 		1C00492E2638A6640000A9C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C00492D2638A6640000A9C6 /* Assets.xcassets */; };
 		1C0049312638A6640000A9C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C00492F2638A6640000A9C6 /* LaunchScreen.storyboard */; };
+		1C0049422638A7C90000A9C6 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0049412638A7C90000A9C6 /* ResultVC.swift */; };
+		1C0049462639B8530000A9C6 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0049452639B8520000A9C6 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C0049212638A65F0000A9C6 /* tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0049242638A6600000A9C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C0049262638A6600000A9C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C0049282638A6600000A9C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C0049282638A6600000A9C6 /* CalculatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorVC.swift; sourceTree = "<group>"; };
 		1C00492B2638A6600000A9C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C00492D2638A6640000A9C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C0049302638A6640000A9C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C0049322638A6640000A9C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C0049412638A7C90000A9C6 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
+		1C0049452639B8520000A9C6 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		1C0049232638A6600000A9C6 /* tipsy */ = {
 			isa = PBXGroup;
 			children = (
-				1C0049242638A6600000A9C6 /* AppDelegate.swift */,
-				1C0049262638A6600000A9C6 /* SceneDelegate.swift */,
-				1C0049282638A6600000A9C6 /* ViewController.swift */,
-				1C00492A2638A6600000A9C6 /* Main.storyboard */,
+				1C00493C2638A69D0000A9C6 /* Models */,
+				1C00493B2638A6960000A9C6 /* Views */,
+				1C00493D2638A6B00000A9C6 /* Controllers */,
+				1C00493E2638A6BE0000A9C6 /* Other */,
 				1C00492D2638A6640000A9C6 /* Assets.xcassets */,
-				1C00492F2638A6640000A9C6 /* LaunchScreen.storyboard */,
 				1C0049322638A6640000A9C6 /* Info.plist */,
 			);
 			path = tipsy;
+			sourceTree = "<group>";
+		};
+		1C00493B2638A6960000A9C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C00492F2638A6640000A9C6 /* LaunchScreen.storyboard */,
+				1C00492A2638A6600000A9C6 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C00493C2638A69D0000A9C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C0049452639B8520000A9C6 /* Calculator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C00493D2638A6B00000A9C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C0049282638A6600000A9C6 /* CalculatorVC.swift */,
+				1C0049412638A7C90000A9C6 /* ResultVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1C00493E2638A6BE0000A9C6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				1C0049242638A6600000A9C6 /* AppDelegate.swift */,
+				1C0049262638A6600000A9C6 /* SceneDelegate.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C0049292638A6600000A9C6 /* ViewController.swift in Sources */,
+				1C0049292638A6600000A9C6 /* CalculatorVC.swift in Sources */,
+				1C0049422638A7C90000A9C6 /* ResultVC.swift in Sources */,
 				1C0049252638A6600000A9C6 /* AppDelegate.swift in Sources */,
+				1C0049462639B8530000A9C6 /* Calculator.swift in Sources */,
 				1C0049272638A6600000A9C6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YBQ5S77GM;
 				INFOPLIST_FILE = tipsy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YBQ5S77GM;
 				INFOPLIST_FILE = tipsy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
